@@ -1,1 +1,21 @@
-<p>restaurants works!</p>
+<h2>Our Restuarants</h2>
+<ul class="restaurant">
+  <li *ngFor="let restaurants of restaurant"
+    [class.selected]="restaurants === selctedRestaurant"
+    (click)="onSelect(restaurants)">
+    <span class="badge">{{restaurants.id}}</span> {{restaurants.name}}
+  </li>
+</ul>
+
+<div *ngIf="selctedRestaurant">
+
+  <h2>{{selctedRestaurant.name | uppercase}} Details</h2>
+  <div><span>Resturant id: </span>{{selctedRestaurant.id}}</div>
+  <div>
+    <label for="hero-name">Resturant Name: </label>
+    <input id="hero-name" [(ngModel)]="selctedRestaurant.name" placeholder="name">
+    <label for="hero-name">Resturant deliveryCost: </label>
+    <span id="hero-name" [(ngModel)]="selctedRestaurant.deliveryCost" placeholder="name"></span>
+  </div>
+
+</div>
