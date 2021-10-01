@@ -10,4 +10,14 @@ export const RESTAURANT: RestaurantModel[] = [
     { id: 8, name: 'Chaines',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
     { id: 9, name: 'manen',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
     { id: 10,name: 'mooi',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+
+
+
+    { id: 11, name: 'Pizza',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+    { id: 12, name: 'NewYork pizza',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+    { id: 13, name: 'Italins',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+    { id: 14, name: 'Chaines',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+    { id: 15, name: 'manen',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+    { id: 16,name: 'mooi',logo:'2', type:'Chanies',deliveryCost:'$4',deliveryTime:'13:00' },
+   
   ];
