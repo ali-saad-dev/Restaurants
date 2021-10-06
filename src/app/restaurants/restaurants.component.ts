@@ -1,36 +1,27 @@
-import { RESTAURANT } from './mock-restaurant';
 import { Component, OnInit } from '@angular/core';
-import { RestaurantModel } from './restaurant';
+import restaurantsDb from '../database/restaurantsDb.json';
+import {RestaurantModel} from '../classes/RestaurantModel';
+import {DatabaseService} from '../database/database.service';
+
+
 
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
   styleUrls: ['./restaurants.component.scss']
 })
+
 export class RestaurantsComponent implements OnInit {
   
+  constructor(private databaseService: DatabaseService){}
+
+  restaurants:RestaurantModel[]=[];
+
+  ngOnInit(){
+    this.getRestaurants();
+  }
   
-  restaurant = RESTAURANT;
-
-  selctedRestaurant?: RestaurantModel;
-
-  // selctedRestaurant?: RestaurantModel = {
-  //   id: 1,
-  //   name: 'Alkmaar Restaurant',
-  //   type: 'Chanies',
-  //   logo: '1',
-  //   deliveryCost: '$5',
-  //   deliveryTime: '12:00 AM'
-  // };
-  constructor() { }
-
-  ngOnInit(): void {
-    
-  }
-
-  onSelect(rest: RestaurantModel): void {
-    this.selctedRestaurant = rest;
-  }
- 
-
+  getRestaurants(){
+ this.restaurants = this.databaseService.getRestaurants();
+ }
 }

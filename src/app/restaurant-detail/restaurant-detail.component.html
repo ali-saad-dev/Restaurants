@@ -1,0 +1,24 @@
+<br><br><br><br><br>
+<div class="container">
+<div class="card mb-3" *ngFor="let RestaurantModel of restaurants">
+    <img
+      src="{{RestaurantModel.logo}}"
+      class="card-img-top"
+      alt="..."
+    /> 
+    <div class="card-body">
+        <h5 class="card-title">{{RestaurantModel.name}}</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the bulk of the
+          card's content.
+        </p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{RestaurantModel.type}}</li>
+          <li class="list-group-item">{{RestaurantModel.deliveryTime}}</li>
+          <li class="list-group-item">{{RestaurantModel.deliveryCost}}</li>
+          </ul>
+        <a href="#!" class="btn btn-primary">Button</a>
+      </div>
+  </div>
+</div>
+
