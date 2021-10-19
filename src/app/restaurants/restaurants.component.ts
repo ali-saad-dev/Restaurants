@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import restaurantsDb from '../database/restaurantsDb.json';
+import { MenuItem } from '../classes/menu-item.model';
 import {RestaurantModel} from '../classes/RestaurantModel';
 import {DatabaseService} from '../database/database.service';
 
@@ -12,16 +12,22 @@ import {DatabaseService} from '../database/database.service';
 })
 
 export class RestaurantsComponent implements OnInit {
+
+
+  filteredstring: string = '';
   
   constructor(private databaseService: DatabaseService){}
 
   restaurants:RestaurantModel[]=[];
 
+   menuItem: MenuItem[]=[];
+
   ngOnInit(){
     this.getRestaurants();
+
   }
   
   getRestaurants(){
- this.restaurants = this.databaseService.getRestaurants();
+   this.restaurants = this.databaseService.getRestaurants();
  }
 }

@@ -1,0 +1,14 @@
+   <div class="single-service wow fadeInUp"  data-wow-delay=".2s">
+  <div class="icon">
+  <img src="{{ data.imagePath }}" alt="" />
+  </div>
+  <div class="content">
+  <h3>{{ data.name }}</h3>
+  <p>Anntal:{{data.quantity}}</p>
+  <p>{{ data.description }}</p>
+  <p>{{ data.price | currency: 'BRL': 'symbol'}}</p>
+  </div>
+  <a (click)="getItemCart(data)" class="btn btn-primary">+</a>  
+  <a (click)="removeItem(data)" class="btn btn-primary">-</a> 
+  
+  </div>

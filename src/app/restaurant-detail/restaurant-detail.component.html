@@ -1,24 +1,69 @@
-<br><br><br><br><br>
-<div class="container">
-<div class="card mb-3" *ngFor="let RestaurantModel of restaurants">
-    <img
-      src="{{RestaurantModel.logo}}"
-      class="card-img-top"
-      alt="..."
-    /> 
-    <div class="card-body">
-        <h5 class="card-title">{{RestaurantModel.name}}</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the bulk of the
-          card's content.
-        </p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">{{RestaurantModel.type}}</li>
-          <li class="list-group-item">{{RestaurantModel.deliveryTime}}</li>
-          <li class="list-group-item">{{RestaurantModel.deliveryCost}}</li>
-          </ul>
-        <a href="#!" class="btn btn-primary">Button</a>
+<section id="about" class="about-section pt-150">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-img wow fadeInUp" data-wow-delay=".5s">
+          <img src="{{restaurantData.photo}}" />
+        </div>
       </div>
+      <div class="col-lg-6">
+        <div class="about-content">
+          <div class="section-title">
+            <span class="wow fadeInUp" data-wow-delay=".2s">About Us</span>
+            <h1 class="wow fadeInUp" data-wow-delay=".4s">{{restaurantData.name}}</h1>
+            <p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          </div>
+          <div class="rating-meta d-flex align-items-center wow fadeInUp" data-wow-delay=".65s">
+            <h5>Rating 4.8</h5>
+            <div class="rating">
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+            </div>
+          </div>
+          <div class="counter-up wow fadeInUp" data-wow-delay=".8s">
+            <div class="single-counter">
+              <h3 id="secondo1" class="countup">{{restaurantData.type}}</h3>
+              <h5>Restaurant type</h5>
+            </div>
+            <div class="single-counter position-relative">
+              <h3 id="secondo2" class="countup">{{restaurantData.deliveryTime}}</h3>
+              <h5>DeliveryTime</h5>
+            </div>
+            <div class="single-counter">
+              <h3 id="secondo3" class="countup">{{restaurantData.deliveryCost}}</h3>
+              <h5>Delivery cost</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
+
+
+<section id="services" class="service-section pt-150">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-3 col-sm-4" *ngFor="let menu of menuData.breakfast">
+
+        <img src="{{menu.imagePath}}" class="img-thumbnail" alt="..." />
+        <div class="extra_wrapper">
+          <div class="title col3">Name:{{ menu.name }} </div>
+          Discription: {{ menu.description }}
+          <p class="col1">
+            <span></span>Price: {{ menu.price}}
+
+            <a (click)="addToCart(menu)"  class="btn btn-primary">Add to cart</a>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
