@@ -6,21 +6,20 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class FilterPipe implements PipeTransform {
 
   transform(value: any[], filterString: string, type: string): any[] {
-    
-    const restaurants= [];
-    if (value.length === 0 || filterString === ''|| type === ''){
+
+    const restaurants = [];
+    if (value.length === 0 || filterString === '' || type === '') {
       return value;
     }
 
-    
 
-    for (const RestaurantModel of value){
-      if(RestaurantModel[type] === filterString){
+
+    for (const RestaurantModel of value) {
+      if (RestaurantModel[type] === filterString) {
         restaurants.push(RestaurantModel);
       }
     }
 
     return restaurants;
   }
-
 }

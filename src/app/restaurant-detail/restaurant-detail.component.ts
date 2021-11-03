@@ -1,7 +1,7 @@
 import { MenuItem } from './../classes/menu-item.model';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import {DatabaseService} from '../database/database.service';
+import { DatabaseService } from '../database/database.service';
 import { CartService } from '../database/cart.service';
 
 @Component({
@@ -10,31 +10,35 @@ import { CartService } from '../database/cart.service';
   styleUrls: ['./restaurant-detail.component.scss']
 })
 export class RestaurantDetailComponent implements OnInit {
-  
- public restaurantData: any;
- public menuData: any;
+
+  public filtermenu: string = '';
+
+  public restaurantData: any;
+  public menuData: any;
+
+  public categoridata: any;
 
 
 
-  constructor(private route: ActivatedRoute, private databaseService: DatabaseService, private cartService: CartService){}
+  constructor(private route: ActivatedRoute, private databaseService: DatabaseService, private cartService: CartService) { }
 
   ngOnInit() {
-    this.route.params.subscribe((data: Params)=> { 
-    const id = data['restaurantId'];
-     this.getRestaurantByID(id)
-     this.getRestaurantMenu(id)
-   }); 
+    this.route.params.subscribe((data: Params) => {
+      const id = data['restaurantId'];
+      this.getRestaurantByID(id)
+      this.getRestaurantMenu(id)
+    });
   }
 
-  getRestaurantByID(restaurantId:number){
+  getRestaurantByID(restaurantId: number) {
     this.restaurantData = this.databaseService.getRestaurantByID(restaurantId);
   }
 
-  getRestaurantMenu(id:number){
-  this.menuData = this.databaseService.getMenuByRestaurantId(id);
- 
+  getRestaurantMenu(id: number) {
+    this.menuData = this.databaseService.getMenuByRestaurantId(id);
+    this.categoridata = this.databaseService.categories;
   }
- 
+
   addToCart(product: any) {
     this.cartService.addToCart(new MenuItem(product));
     window.alert('Your product has been added to the cart!');

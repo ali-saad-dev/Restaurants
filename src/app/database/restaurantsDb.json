@@ -4,37 +4,35 @@
       "restaurantId": 1,
       "name": "Rangali Island, Maldives",
       "type": "Chainees",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878744.jpg",
+      "photo": "assets/Res-Photos/pexels-cottonbro-4877840.jpg",
       "deliveryCost": "$15",
       "deliveryTime": "15:00",
       "rating": "5 stars"
-      
+     
     },
     {
       "restaurantId": 2,
       "name": "Dinner in the Sky",
       "type": "Italian",
-      "photo": "assets/Res-Photos/pexels-cottonbro-4877840.jpg",
+      "photo": "assets/Res-Photos/pexels-cottonbro-4253317.jpg",
       "deliveryCost": "$13",
       "deliveryTime": "12:00",
       "rating": "5 stars"
-      
     },
     {
       "restaurantId": 3,
       "name": "Parallax Restaurant",
       "type": "Amricans",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
+      "photo": "assets/Res-Photos/pexels-robi-pastores-3714786.jpg",
       "deliveryCost": "$17",
       "deliveryTime": "13:00",
       "rating": "5 stars"
-      
     },
     {
       "restaurantId": 4,
       "name": "Norma’s",
       "type": "Arabic",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878744.jpg",
+      "photo": "assets/Res-Photos/pexels-rene-asmussen-1581384.jpg",
       "deliveryCost": "$18",
       "deliveryTime": "17:00",
       "rating": "5 stars"
@@ -44,7 +42,7 @@
       "restaurantId": 5,
       "name": "Eternity",
       "type": "Italian",
-      "photo": "assets/Res-Photos/pexels-naim-benjelloun-2290744.jpg",
+      "photo": "assets/Res-Photos/pexels-olya-kobruseva-4676640.jpg",
       "deliveryCost": "$18",
       "deliveryTime": "12:00",
       "rating": "5 stars"
@@ -54,7 +52,7 @@
       "restaurantId": 6,
       "name": "The Disaster Café",
       "type": "Italian",
-      "photo": "assets/Res-Photos/pexels-mat-brown-1395964.jpg",
+      "photo": "assets/Res-Photos/pexels-rene-asmussen-2504911.jpg",
       "deliveryCost": "$11",
       "deliveryTime": "18:00",
       "rating": "5 stars"
@@ -64,7 +62,7 @@
       "restaurantId": 7,
       "name": "Aurum",
       "type": "Chainees",
-      "photo": "assets/Res-Photos/pexels-julie-aagaard-1426711.jpg",
+      "photo": "assets/Res-Photos/pexels-anna-tukhfatullina-food-photographerstylist-2551794.jpg",
       "deliveryCost": "$12",
       "deliveryTime": "13:00",
       "rating": "5 stars"
@@ -74,7 +72,7 @@
       "restaurantId": 8,
       "name": "Homewood Mountain Resort",
       "type": "Chainees",
-      "photo": "assets/Res-Photos/pexels-julie-aagaard-1426711.jpg",
+      "photo": "assets/Res-Photos/pexels-anna-tukhfatullina-food-photographerstylist-2551794.jpg",
       "deliveryCost": "$13",
       "deliveryTime": "14:00",
       "rating": "5 stars"
@@ -84,7 +82,7 @@
       "restaurantId": 9,
       "name": "Kinderkookkafe",
       "type": "Amricans",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
+      "photo": "assets/Res-Photos/pexels-cottonbro-4255386.jpg",
       "deliveryCost": "",
       "deliveryTime": "",
       "rating": "5 stars"
@@ -94,7 +92,7 @@
       "restaurantId": 10,
       "name": "A380 In-Flight Kitchen",
       "type": "Amricans",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
+      "photo": "assets/Res-Photos/pexels-igor-starkov-914388.jpg",
       "deliveryCost": "",
       "deliveryTime": "",
       "rating": "5 stars"
@@ -104,7 +102,7 @@
       "restaurantId": 11,
       "name": "Villa Escudero",
       "type": "Arabic",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
+      "photo": "assets/Res-Photos/pexels-dmitry-zvolskiy-2253643.jpg",
       "deliveryCost": "",
       "deliveryTime": "",
       "rating": "5 stars"
@@ -114,37 +112,7 @@
       "restaurantId": 12,
       "name": "Terry Bison Ranch",
       "type": "Arabic",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
-      "deliveryCost": "",
-      "deliveryTime": "",
-      "rating": "5 stars"
-      
-    },
-    {
-      "restaurantId": 13,
-      "name": "Doctors Appointment",
-      "type": "Arabic",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
-      "deliveryCost": "",
-      "deliveryTime": "",
-      "rating": "5 stars"
-      
-    },
-    {
-      "restaurantId": 14,
-      "name": "Doctors Appointment",
-      "type": "Arabic",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
-      "deliveryCost": "",
-      "deliveryTime": "",
-      "rating": "5 stars"
-      
-    },
-    {
-      "restaurantId": 15,
-      "name": "Doctors Appointment",
-      "type": "May 7th at 12:30pm",
-      "photo": "assets/Res-Photos/pexels-jonathan-borba-2878741.jpg",
+      "photo": "assets/Res-Photos/pexels-rachel-claire-6127275.jpg",
       "deliveryCost": "",
       "deliveryTime": "",
       "rating": "5 stars"

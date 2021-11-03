@@ -5,6 +5,7 @@ export class MenuItem {
   name: string;
   description: string;
   price: number;
+  categorie: string;
   restaurantId: number;
   private _quantity: number;
 
@@ -14,6 +15,7 @@ export class MenuItem {
     this.name = data.name;
     this.description = data.description;
     this.price = data.price;
+    this.categorie = data.categorie;
     this.restaurantId = data.restaurantId;
     this._quantity = 0;
   }

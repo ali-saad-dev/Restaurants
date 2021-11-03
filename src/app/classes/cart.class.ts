@@ -10,17 +10,9 @@ export class Cart {
 
     private _totalPrice: number = 0;
 
-
-
     _products: MenuItem[] = [];
 
-
-
-
-
-    constructor() {
-
-    }
+    constructor() { }
 
     private existInCart(id: number): MenuItem[] {
         const foundItem = this._products.filter(item => item.id == id);
@@ -28,13 +20,14 @@ export class Cart {
     }
 
     addItem(item: MenuItem) {
-        let existingItem = this.existInCart(item.id);
-        if (existingItem.length > 0) {
-            const item = existingItem[0];
+        let existingItems = this.existInCart(item.id);
+        if (existingItems.length > 0) {
+            const item = existingItems[0];
+            item.increaseQtd();
         } else {
+            item.increaseQtd();
             this.items.push(item);
         }
-        item.increaseQtd();
         this.calculate();
     }
 
@@ -58,14 +51,13 @@ export class Cart {
         this._totalPrice = 0;
     }
 
-  
-
     private calculate() {
         this._totalPrice = 0;
         for (let i = 0; i < this._products.length; i++) {
             const item = this._products[i];
-            this._totalPrice += item.price;
-            console.log(this._totalPrice);
+            this._totalPrice += item.price * item.quantity;
+
+            // console.log(this._totalPrice);
         }
     }
 

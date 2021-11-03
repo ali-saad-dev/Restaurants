@@ -1,3 +1,5 @@
+import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
@@ -11,7 +13,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'detail/:restaurantId', component: RestaurantDetailComponent },
   { path: 'cart', component: ShoppingCartComponent },
-  { path: 'shipping', component: ShippingComponent }
+  { path: 'contactform', component: ContactFormComponent },
+  { path: 'checkoutform', component: CheckoutFormComponent }
 ];
 
 @NgModule({

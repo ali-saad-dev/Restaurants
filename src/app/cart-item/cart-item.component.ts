@@ -1,8 +1,7 @@
 import { CartService } from './../database/cart.service';
-import { Cart } from './../classes/cart.class';
-
 import { MenuItem } from './../classes/menu-item.model';
 import { Component, Input, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-cart-item',
@@ -15,7 +14,7 @@ export class CartItemComponent implements OnInit {
   public data!: MenuItem;
 
   itemCart: any;
-  constructor(private cartService: CartService ) { }
+  constructor(private cartService: CartService, private cookieService: CookieService ) { }
 
   ngOnInit(): void {
 
@@ -23,9 +22,16 @@ export class CartItemComponent implements OnInit {
 
   getItemCart(item: MenuItem) {
     this.itemCart = this.cartService.addToCart(item);
+   // JSON.parse(this.cookieService.get('cart'));
   }
    
   removeItem(item:MenuItem){
     this.itemCart = this.cartService.removeItem(item.id);
   }
+
+  clearAll(){
+    this.itemCart = this.cartService.clearCart();
+  }
+
+ 
 }

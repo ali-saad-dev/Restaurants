@@ -12,6 +12,12 @@ import { FilterPipe } from './Pipes/filter.pipe';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { CookieService } from 'ngx-cookie-service';
+import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
+import { MenufilterPipe } from './Pipes/menufilter.pipe';
+
+
 
 
 @NgModule({
@@ -25,9 +31,9 @@ import { CartItemComponent } from './cart-item/cart-item.component';
     ShoppingCartComponent,
     ShippingComponent,
     CartItemComponent,
-    
-    
- 
+    ContactFormComponent,
+    CheckoutFormComponent,
+    MenufilterPipe
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,11 @@ import { CartItemComponent } from './cart-item/cart-item.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [FormBuilder],
+  providers: [
+    FormBuilder,
+    CookieService
+  ],
+             
   bootstrap: [AppComponent]
 })
 export class AppModule { }

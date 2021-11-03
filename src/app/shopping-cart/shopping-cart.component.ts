@@ -46,6 +46,7 @@ clear() {
   this.cartService.clearCart();
 }
 
+
   ngOnInit(): void {
     // this.items = this.cartService.getItems();
     // this.totalPrice = this.cartService.

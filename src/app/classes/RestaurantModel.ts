@@ -8,7 +8,7 @@ export class RestaurantModel{
     photo:string;
     rating: number;
     category: string;
-    favorite:boolean;
+    isFavorite:boolean;
     deliveryCost:number;
     deliveryTime:Time;
 
@@ -18,10 +18,10 @@ export class RestaurantModel{
       this.type = data.type;
       this.rating = data.rating;
       this.category = data.category;
-      this.favorite = data.favorite;
       this.photo = data.photo;
       this.deliveryCost = data.deliveryCost;
       this.deliveryTime = data.deliveryTime;
+      this.isFavorite = false;
     }
     
   }

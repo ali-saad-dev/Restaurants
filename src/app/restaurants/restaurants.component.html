@@ -1,59 +1,64 @@
 <br><br><br>
 <div class="container">
-<label>Filter restuarant by type: </label>&nbsp;
-<input type="text" [(ngModel)]="filteredstring"/>
-<section id="testimonial"  class="testimonial-section img-bg pt-150 pb-40">
-  <div class="container" >
-  <div class="row justify-content-center">
-  <div class="col-lg-6">
-  <div class="section-title mb-60 text-center">
-  <span class="wow fadeInUp" data-wow-delay=".2s" >Best delivery in Alkmaar</span>
-  <h1 class="wow fadeInUp" data-wow-delay=".4s">What for Restaurant we have</h1>
-  </div>
-  </div>
-  </div>
-  <div class="row testimonial-wrapper">
-  <div class="col-lg-4 col-md-6 -mt-30" *ngFor="let RestaurantModel of restaurants | filter: filteredstring:'type'">
-  <div class="single-testimonial wow fadeInUp" data-wow-delay=".2s">
-  <div class="rating">
-  <i class="lni lni-star-filled"></i>
-  <i class="lni lni-star-filled"></i>
-  <i class="lni lni-star-filled"></i>
-  <i class="lni lni-star-filled"></i>
-  <i class="lni lni-star-filled" ></i>
-  </div>
-  <div class="content">
-  <p>Lorem ipsum dolor sit amet {{RestaurantModel.deliveryTime}} onsetetur sadipscing elitr,{{RestaurantModel.deliveryCost}} sed diam non eirmod tempor invidunt ut labore etdo magna aliquyam erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd gubergren.</p>
-  </div>
-  <div class="info">
-  <div class="image">
-  <img src="{{RestaurantModel.photo}}" alt="" />
-  </div>
-  <div class="text">
-  <h5>{{RestaurantModel.name}}</h5>
-  <p>{{RestaurantModel.type}}</p>
-  <a href="javascript:void(0)" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s" routerLinkActive="active" routerLink="/detail/{{RestaurantModel.restaurantId}}" >Restaurant Detials</a>
-  </div>
-  </div>
-  </div>
-  </div>
- </div>
- </div>
- </section>
+	
+	<label>Filter restuarant by type: </label>&nbsp;
+	<input type="text" [(ngModel)]="filteredstring" />
+
+	
+	<section id="testimonial" class="testimonial-section img-bg pt-150 pb-40">
+		<div class="filterheart"  (click)="toggleShowFavorits()">
+			<i class="iconify" data-icon="bi:heart-fill"></i>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="section-title mb-60 text-center">
+						<span class="wow fadeInUp" data-wow-delay=".2s">Best delivery in Alkmaar</span>
+						<h1 class="wow fadeInUp" data-wow-delay=".4s">What for Restaurant we have</h1>
+					</div>
+				</div>
+			</div>
+			<div *ngIf="restaurants.length === 0">There are no Favorits Restaurants</div>
+			<div class="row testimonial-wrapper">
+				<div class="col-lg-4 col-md-6 -mt-30" 
+					*ngFor="let restaurantModel of restaurants| filter: filteredstring:'type'">
+					<div class="single-testimonial wow fadeInUp" data-wow-delay=".2s">
+						<div class="rating" >
+							<i class="lni lni-star-filled"></i>
+							<i class="lni lni-star-filled"></i>
+							<i class="lni lni-star-filled"></i>
+							<i class="lni lni-star-filled"></i>
+							<i class="lni lni-star-filled"></i>
+						</div>
+						<div (click)="toggleFavorit(restaurantModel)" [ngClass]="{'active':restaurantModel.isFavorite}" >
+							<span class="iconify" data-icon="bi:heart-fill"></span>
+						</div>
+						<div class="content" >
+							<p>Lorem ipsum dolor sit amet {{restaurantModel.deliveryTime}} onsetetur sadipscing
+								elitr,{{restaurantModel.deliveryCost}} sed diam non eirmod tempor invidunt ut labore
+								etdo magna aliquyam
+								erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd
+								gubergren.</p>
+						</div>
+						<div class="info">
+							<div class="image">
+								<img src="{{restaurantModel.photo}}" alt="" />
+							</div>
+							<div class="text">
+								<h5>{{restaurantModel.name}}</h5>
+								<p>{{restaurantModel.type}}</p>
+								<a href="javascript:void(0)" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s"
+									routerLinkActive="active" routerLink="/detail/{{restaurantModel.restaurantId}}">Restaurant Detials</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!--  
+	<!--  
  <br><br>
  <div class="row">
    <div class="col-4 col-md-3 col-sm-4" *ngFor="let RestaurantModel of restaurants | filter: filteredstring:'type' "  style="width: 18rem;">
@@ -87,7 +92,3 @@
    </div>
  </div>
 </div> -->
- 
-
-
-
