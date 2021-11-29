@@ -1,12 +1,9 @@
 <br><br><br>
 <div class="container">
-	
 	<label>Filter restuarant by type: </label>&nbsp;
 	<input type="text" [(ngModel)]="filteredstring" />
-
-	
 	<section id="testimonial" class="testimonial-section img-bg pt-150 pb-40">
-		<div class="filterheart"  (click)="toggleShowFavorits()">
+		<div class="filterheart" (click)="toggleShowFavorits()">
 			<i class="iconify" data-icon="bi:heart-fill"></i>
 		</div>
 		<div class="container">
@@ -14,41 +11,33 @@
 				<div class="col-lg-6">
 					<div class="section-title mb-60 text-center">
 						<span class="wow fadeInUp" data-wow-delay=".2s">Best delivery in Alkmaar</span>
-						<h1 class="wow fadeInUp" data-wow-delay=".4s">What for Restaurant we have</h1>
+						<h1 class="wow fadeInUp" data-wow-delay=".4s">Restaurants we work with</h1>
 					</div>
 				</div>
 			</div>
 			<div *ngIf="restaurants.length === 0">There are no Favorits Restaurants</div>
 			<div class="row testimonial-wrapper">
-				<div class="col-lg-4 col-md-6 -mt-30" 
-					*ngFor="let restaurantModel of restaurants| filter: filteredstring:'type'">
+				<div class="col-lg-4 col-md-6 -mt-30"
+					*ngFor="let restaurantModel of restaurants| filter: filteredstring:'type'"><br><br>
 					<div class="single-testimonial wow fadeInUp" data-wow-delay=".2s">
-						<div class="rating" >
-							<i class="lni lni-star-filled"></i>
-							<i class="lni lni-star-filled"></i>
-							<i class="lni lni-star-filled"></i>
-							<i class="lni lni-star-filled"></i>
-							<i class="lni lni-star-filled"></i>
+						<div class="rating">
+							Rating: <i class="lni lni-star-filled">{{restaurantModel.rating}}</i>
 						</div>
-						<div (click)="toggleFavorit(restaurantModel)" [ngClass]="{'active':restaurantModel.isFavorite}" >
+						<div (click)="toggleFavorit(restaurantModel)" [ngClass]="{'active':restaurantModel.isFavorite}">
 							<span class="iconify" data-icon="bi:heart-fill"></span>
-						</div>
-						<div class="content" >
-							<p>Lorem ipsum dolor sit amet {{restaurantModel.deliveryTime}} onsetetur sadipscing
-								elitr,{{restaurantModel.deliveryCost}} sed diam non eirmod tempor invidunt ut labore
-								etdo magna aliquyam
-								erat, sed diam vero eos et accusam et justo duo dolores et ea rebum clita kasd
-								gubergren.</p>
 						</div>
 						<div class="info">
 							<div class="image">
-								<img src="{{restaurantModel.photo}}" alt="" />
-							</div>
-							<div class="text">
 								<h5>{{restaurantModel.name}}</h5>
-								<p>{{restaurantModel.type}}</p>
-								<a href="javascript:void(0)" class="main-btn btn-hover wow fadeInUp" data-wow-delay=".6s"
-									routerLinkActive="active" routerLink="/detail/{{restaurantModel.restaurantId}}">Restaurant Detials</a>
+								<img src="{{restaurantModel.photo}}" class="card-img-top" /><br><br>
+								<div class="content">
+									<p>Offers menus for Lunch and Dinner Cuisine: {{restaurantModel.type}}<br>
+										Delivery from {{restaurantModel.deliveryTime}} AM.
+									</p>
+								</div>
+								<a id="detail-button" href="javascript:void(0)" class="main-btn btn-hover wow fadeInUp"
+									data-wow-delay=".6s" routerLinkActive="active"
+									routerLink="/detail/{{restaurantModel.restaurantId}}">Details</a>
 							</div>
 						</div>
 					</div>
@@ -56,39 +45,48 @@
 			</div>
 		</div>
 	</section>
-
-
-	<!--  
- <br><br>
- <div class="row">
-   <div class="col-4 col-md-3 col-sm-4" *ngFor="let RestaurantModel of restaurants | filter: filteredstring:'type' "  style="width: 18rem;">
-     <img
-       src="{{RestaurantModel.photo}}"
-       class="card-img-top"
-       alt="..."
-     />
-     <div class="card-body">
-       <h5 class="card-title">{{RestaurantModel.name}}</h5>
-       <p class="card-text">
-         Some quick example text to build on the card title and make up the bulk of the
-         card's content.
-       </p>
-     </div>
-     <ul class="list-group list-group-flush">
-       <li class="list-group-item">RestaurantType: {{RestaurantModel.type}}</li>
-       <li class="list-group-item">DeliveryTime: {{RestaurantModel.deliveryTime}}</li>
-       <li class="list-group-item">DeliveryCost: {{RestaurantModel.deliveryCost}}</li>
-     </ul>
-     <div class="rating-meta d-flex align-items-center wow fadeInUp" data-wow-delay=".65s">
-       <h5>{{RestaurantModel.rating}}</h5>
-       <div class="rating">
-       <i class="lni lni-star-filled"></i>
-       <i class="lni lni-star-filled"></i>
-       </div>
-       </div>
-     <div class="card-body">
-       <a href="#" class="btn btn-primary" routerLinkActive="active" routerLink="/detail/{{RestaurantModel.restaurantId}}">Detials</a>
-     </div>
-   </div>
- </div>
-</div> -->
+</div>
+<footer id="footer" class="footer pt-100 pb-70">
+	<div class="footer-shape">
+		<img src="assets/foodapplanding/img/footer/footer-left.svg" alt="" class="shape shape-1" />
+		<img src="assets/foodapplanding/img/footer/footer-right.svg" alt="" class="shape shape-2" />
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+					<div class="logo">
+						<a href="#"><img src="assets/foodapplanding/img/logo/logo-2.svg" alt="logo" /></a>
+					</div>
+					<ul class="links">
+						<li>
+							<a href="home" class="page-scroll">Home</a>
+						</li>
+						<li>
+							<a class="page-scroll" routerLinkActive="active"
+								routerLink="/restaurants">Restaurants</a>
+						</li>
+						<li>
+							<a routerLinkActive="active" routerLink="/contactform">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+					<div class="download-btns">
+						<a href="javascript:void(0)">
+							<span class="icon"><i class="lni lni-apple"></i></span>
+							<span class="text">Download on the <b>App Store</b> </span>
+						</a>
+						<a href="javascript:void(0)">
+							<span class="icon"><i class="lni lni-play-store"></i></span>
+							<span class="text">GET IT ON <b>Play Store</b> </span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>	
+	

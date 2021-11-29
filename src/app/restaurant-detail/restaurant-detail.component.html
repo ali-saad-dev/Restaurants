@@ -11,8 +11,10 @@
           <div class="section-title">
             <span class="wow fadeInUp" data-wow-delay=".2s">Welcome to our Resturant</span>
             <h1 class="wow fadeInUp" data-wow-delay=".4s">{{restaurantData.name}}</h1>
-            <p class="wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <p class="wow fadeInUp" data-wow-delay=".6s">The approach to the menu was easy. We had no interest in trying to reinvent food.
+               We went with choices that were popular catering requests — basic,
+                down-home style — just from a wide range of regions.
+                 We are known for our generous portions</p>
           </div>
           <div class="rating-meta d-flex align-items-center wow fadeInUp" data-wow-delay=".65s">
             <h5>Rating 4.8</h5>
@@ -26,16 +28,12 @@
           </div>
           <div class="counter-up wow fadeInUp" data-wow-delay=".8s">
             <div class="single-counter">
-              <h3 id="secondo1" class="countup">{{restaurantData.type}}</h3>
               <h5>Restaurant type</h5>
+              <h3 id="secondo1" class="countup">{{restaurantData.type}}</h3>
             </div>
             <div class="single-counter position-relative">
-              <h3 id="secondo2" class="countup">{{restaurantData.deliveryTime}}</h3>
               <h5>DeliveryTime</h5>
-            </div>
-            <div class="single-counter">
-              <h3 id="secondo3" class="countup">{{restaurantData.deliveryCost}}</h3>
-              <h5>Delivery cost</h5>
+              <h3 id="secondo2" class="countup">{{restaurantData.deliveryTime}}</h3>
             </div>
           </div>
 
@@ -44,45 +42,45 @@
     </div>
   </div>
 </section>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-
 <div class="section-title text-center mb">
   <span class="wow fadeInUp" data-wow-delay=".2s">Meals Delivery Services</span>
-  <h1 class="wow fadeInUp" data-wow-delay=".4s">All Food You Like</h1>
+  <h1 class="wow fadeInUp" data-wow-delay=".4s">Menu overview</h1>
 </div>
-<section id="services" class="service-section pt-150">
+<section id="services" class="service-section">
   <span class="wow fadeInUp" data-wow-delay=".2s"></span>
   <h1 class="wow fadeInUp" data-wow-delay=".4s"></h1>
-  <div class="container">
-<br><br><br>
-    <!-- <label>Filter Menu by categorie: </label>&nbsp;
-    <input type="text" [(ngModel)]="filtermenu" />
-     -->
+  <div class="container mt-5">
+    <br><br><br>
+    <label for="categories">Choose a categorie:</label>
+    <select name="categories" [(ngModel)]="filtermenu">
+      <option value="" selected>
+        All categorie
+      </option>
+      <option *ngFor="let categorie of categoridata" value="{{categorie}}">{{categorie}}</option>
+    </select>
+    <!-- <label>Filter Menu by categorie: </label>&nbsp;-->
+    <input hidden type="text" [(ngModel)]="filtermenu" />
     <div class="row">
-      <div class="col-6 col-md-3 col-sm-4" *ngFor="let menu of menuData.menus| menufilter: filtermenu:'categorie'">
-
-        <img src="{{menu.imagePath}}" class="img-thumbnail" alt="..." />
-        <div class="extra_wrapper">
-          <div class="title col3">Name:{{ menu.name }} </div>
-          Discription: {{ menu.description }}
-          <p class="col1">
-            <span></span>Price: {{ menu.price | currency : "€"}}
-
-            <button (click)="addToCart(menu)" class="btn btn-primary">Add to cart</button>
-          </p>
-          <br>
-        </div>
+      <div class="col-md-3 item"  *ngFor="let menu of menuData.menus| menufilter: filtermenu:'categorie'">
+          <div class="card">
+              <div class="image-container">
+                  <img src="{{menu.imagePath}}" class="img-fluid rounded thumbnail-image">
+              </div>
+              <div class="product-detail-container p-2">
+                  <div class="extra_wrapper">
+                    <div class="title col3">
+                      <h5>{{ menu.name }}</h5>
+                    </div>
+                    {{ menu.description }}
+                    <p class="col1">
+                      <span></span>{{ menu.price | currency : "€"}}
+                      <button id="add"  (click)="addToCart(menu)" class="btn btn-primary">Add to cart</button>
+                    </p>
+                    <br>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+      </div>
   </div>
-
 </section>

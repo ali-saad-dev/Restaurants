@@ -16,7 +16,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CookieService } from 'ngx-cookie-service';
 import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
 import { MenufilterPipe } from './Pipes/menufilter.pipe';
-
+import { GoogleMapsModule } from '@angular/google-maps';
+import { FactuurComponent } from './factuur/factuur.component';
 
 
 
@@ -33,20 +34,21 @@ import { MenufilterPipe } from './Pipes/menufilter.pipe';
     CartItemComponent,
     ContactFormComponent,
     CheckoutFormComponent,
-    MenufilterPipe
+    MenufilterPipe,
+    FactuurComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GoogleMapsModule
   ],
   providers: [
     FormBuilder,
     CookieService
   ],
-             
   bootstrap: [AppComponent]
 })
 export class AppModule { }

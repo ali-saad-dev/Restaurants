@@ -1,24 +1,22 @@
+import { Router } from '@angular/router';
 import { CartTotal } from './../database/cart.service';
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, } from '@angular/core';
 import { CartService } from '../database/cart.service';
-import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
-
-
 @Component({
   selector: 'app-checkout-form',
   templateUrl: './checkout-form.component.html',
   styleUrls: ['./checkout-form.component.scss']
 })
+
 export class CheckoutFormComponent implements OnDestroy {
 
-  // private cartSubscrption: Subscription;
   public cart!: CartTotal;
   private cartSubscrption: Subscription;
   public amount!: number;
 
-
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService, private Router: Router) {
     this.cartSubscrption = this.cartService.changeCartEvent$.subscribe(cart => {
       this.cart = cart;
       const cartcontent = cart.cartContent;
@@ -28,7 +26,6 @@ export class CheckoutFormComponent implements OnDestroy {
         total = total + product.quantity;
       }
       this.amount = total;
-      // this.amount = this.cartService.cart.numberOfItems;
     });
   }
 
@@ -38,27 +35,28 @@ export class CheckoutFormComponent implements OnDestroy {
     }
   }
 
-
   checkoutform = new FormGroup({
     firstname: new FormControl('', Validators.required),
     lastname: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
     address: new FormControl('', Validators.required),
     postcode: new FormControl('', Validators.required),
-    payment: new FormControl('', Validators.required),
-    namecard: new FormControl('', Validators.required),
+    paymentType: new FormControl('', Validators.required),
+    namecard: new FormControl(''),
     cardnumber: new FormControl('', Validators.required),
     expiration: new FormControl('', Validators.required),
     cvv: new FormControl('', Validators.required),
   });
 
-  public showMsg!: boolean;
+  public isVisible: any;
+  public isSelected: boolean = true;
+  public isSuccess!: boolean;
 
   onSubmit() {
-    if (this.checkoutform.invalid) {
-      this.showMsg = false;
-    }else{
-      this.showMsg = true;
+    if (this.checkoutform.valid) {
+      this.isSuccess = true;
+      this.checkoutform.reset();
+      this.cartService.clearCart()
     }
   }
 }

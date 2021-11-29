@@ -1,11 +1,11 @@
-export class shippingModels{
+export class shippingModels {
 
-    type:string;
-    price:number;
+  type: string;
+  price: number;
 
-      constructor(data:any){
-          this.type = data.type;
-          this.price = data.price;
-          
-      }
-    }
+  constructor(data: any) {
+    this.type = data.type;
+    this.price = data.price;
+
+  }
+}

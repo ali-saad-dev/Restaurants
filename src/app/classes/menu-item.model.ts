@@ -24,6 +24,7 @@ export class MenuItem {
     this._quantity++;
     console.log(this._quantity);
   }
+  
   decreaseQtd() {
     if (this._quantity > 0) {
       this._quantity--;

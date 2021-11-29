@@ -2,9 +2,6 @@ import { RestaurantModel } from './../classes/RestaurantModel';
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from '../classes/menu-item.model';
 import { DatabaseService } from '../database/database.service';
-
-
-
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
@@ -13,15 +10,14 @@ import { DatabaseService } from '../database/database.service';
 
 export class RestaurantsComponent implements OnInit {
 
-private _categoryFilter: string = '';
+  private _categoryFilter: string = '';
+  get categoryFilter(): string {
+    return this._categoryFilter;
+  }
 
-get categoryFilter():string{
-return this._categoryFilter;
-}
-set categoryFilter(value: string){
-this._categoryFilter = value;
-}
-
+  set categoryFilter(value: string) {
+    this._categoryFilter = value;
+  }
 
   filteredstring: string = '';
   filterfavorits: boolean = false;
@@ -29,7 +25,6 @@ this._categoryFilter = value;
   constructor(private databaseService: DatabaseService) { }
 
   restaurants: RestaurantModel[] = [];
-
   menuItem: MenuItem[] = [];
 
   ngOnInit() {
@@ -44,21 +39,19 @@ this._categoryFilter = value;
     restaurant.isFavorite = !restaurant.isFavorite;
     console.log(restaurant.isFavorite)
   }
-  Arabic()
-  {
+
+  Arabic() {
     this.categoryFilter = "Arabic";
     this.categoryFilter = this.filteredstring;
   }
-  toggleShowFavorits(){
-    
+  toggleShowFavorits() {
     this.filterfavorits = !this.filterfavorits;
-    if(this.filterfavorits){
+    if (this.filterfavorits) {
       this.restaurants = this.restaurants.filter(x => x.isFavorite === true);
-    }else{
+    } else {
       this.restaurants = this.databaseService.getRestaurants();
     }
   }
-
 }
 
 

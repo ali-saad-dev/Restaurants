@@ -1,9 +1,8 @@
 import { MenuItem } from './../classes/menu-item.model';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { DatabaseService } from '../database/database.service';
 import { CartService } from '../database/cart.service';
-
 @Component({
   selector: 'app-restaurant-detail',
   templateUrl: './restaurant-detail.component.html',
@@ -12,13 +11,9 @@ import { CartService } from '../database/cart.service';
 export class RestaurantDetailComponent implements OnInit {
 
   public filtermenu: string = '';
-
   public restaurantData: any;
   public menuData: any;
-
   public categoridata: any;
-
-
 
   constructor(private route: ActivatedRoute, private databaseService: DatabaseService, private cartService: CartService) { }
 
@@ -43,7 +38,6 @@ export class RestaurantDetailComponent implements OnInit {
     this.cartService.addToCart(new MenuItem(product));
     window.alert('Your product has been added to the cart!');
   }
-
 }
 
 

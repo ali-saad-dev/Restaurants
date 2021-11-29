@@ -1,18 +1,13 @@
 import { MenuItem } from "./menu-item.model";
-import { CartItem } from "../shopping-cart/cart-item.model";
 import { Injectable } from "@angular/core";
-
-
 @Injectable({
     providedIn: 'root'
 })
+
 export class Cart {
 
     private _totalPrice: number = 0;
-
     _products: MenuItem[] = [];
-
-    constructor() { }
 
     private existInCart(id: number): MenuItem[] {
         const foundItem = this._products.filter(item => item.id == id);
@@ -33,12 +28,14 @@ export class Cart {
 
     removeItem(id: number) {
         let existingItem = this.existInCart(id);
+        console.log(existingItem)
         if (existingItem.length > 0) {
             const productIndex = this._products.findIndex((item) => item.id == id);
             const item = existingItem[0];
             if (item.quantity > 0) {
                 item.decreaseQtd()
-            } else {
+            }
+            if (item.quantity == 0) {
                 this._products.splice(productIndex, 1);
             }
             this.calculate();
@@ -56,8 +53,6 @@ export class Cart {
         for (let i = 0; i < this._products.length; i++) {
             const item = this._products[i];
             this._totalPrice += item.price * item.quantity;
-
-            // console.log(this._totalPrice);
         }
     }
 
@@ -73,16 +68,5 @@ export class Cart {
     get items() {
         return this._products;
     }
-
-    // increaseQtd(item: CartItem) {
-    //     item.quantity = item.quantity + 1;
-    // }
-
-    // decreaseQtd(item: CartItem) {
-    //     item.quantity = item.quantity - 1;
-    //     if (item.quantity === 0) {
-    //         this.removeItem(item.menuItem.id);
-    //     }
-    // }
 }
 

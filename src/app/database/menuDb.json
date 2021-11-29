@@ -2,98 +2,561 @@
   "restaurants": [
     {
       "restaurantId": 1,
-      "menus":
-         [
-          {
-            "id": 1,
-            "categorie": "healthy",  
-            "name": "vigtarin",
-            "imagePath": "assets/menu-item-photos/1.jpg",
-            "description": "4 chease",
-            "price": 10
-          },
-          {
-            "id": 2,
-            "categorie": "healthy",
-            "name": "Sushi",
-            "imagePath": "assets/menu-item-photos/17.jpg",
-            "description": "Chees burger",
-            "price": 12
-          },
-          {
-            "id": 3,
-            "categorie": "dinner",
-            "name": "spagti",
-            "imagePath": "assets/menu-item-photos/3.jpg",
-            "description": "Chees burger",
-            "price": 7.5
-          },
-          {
-            "id": 4,
-            "categorie": "dinner",
-            "name": "spagti",
-            "imagePath": "assets/menu-item-photos/4.jpg",
-            "description": "Chees burger",
-            "price": 14
-          },
-          {
-            "id": 5,
-            "categorie": "fastfood",
-            "name": "Pizza",
-            "imagePath": "assets/menu-item-photos/5.jpg",
-            "description": "Chees burger",
-            "price": 8
-          },
-          {
-            "id": 6,
-            "categorie": "fastfood",
-            "name": "Pizza",
-            "imagePath": "assets/menu-item-photos/6.jpg",
-            "description": "Chees burger",
-            "price": 5
-          },
-          {
-            "id": 7,
-            "categorie": "fastfood",
-            "name": "Burger",
-            "imagePath": "assets/menu-item-photos/7.jpg",
-            "description": "Chees burger",
-            "price": 20
-          },
-          {
-            "id": 8,
-            "categorie": "fastfood",
-            "name": "Burger",
-            "imagePath": "assets/menu-item-photos/8.jpg",
-            "description": "Chees burger",
-            "price": 13
-          },
-          {
-            "id": 9,
-            "categorie": "dinner",
-            "name": "spagti",
-            "imagePath": "assets/menu-item-photos/9.jpg",
-            "description": "Chees burger",
-            "price": 11
-          },
-          {
-            "id": 10,
-            "categorie": "dinner",
-            "name": "spagti",
-            "imagePath": "assets/menu-item-photos/10.jpg",
-            "description": "Chees burger",
-            "price": 12
-          },
-          {
-            "id": 11,
-            "categorie": "dinner",
-            "name": "spagti",
-            "imagePath": "assets/menu-item-photos/11.jpg",
-            "description": "Chees burger",
-            "price": 22
-          }
-        ]
-      }
-
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "Vigtarin",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "Healthy vigtarin",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "Sushi meal",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti bolonize",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "spaghetti white",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "Pizza margrita",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": "Pizza 4 chease",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chease burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Chease burger",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "spaghetti basile",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "spaghetti meat",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "spaghetti chease",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 2,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vigtarin",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "Healthy vigtarin meal",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "Sushi meal",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti bolonize",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "spaghetti white souce",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "Pizza margrita",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": "Pizza 4 chease",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chees burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Chease burger",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "spaghetti chease",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "spaghetti meat",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "spaghetti basil",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 3,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vigtarin",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "healthy vigtarin meal",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "Sushi meal",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti bolonize",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "spaghetti white souce",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "Pizza margrita",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": "Pizza 4 chease",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chease burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Chease burger",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "spaghetti chease",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "spaghetti meat",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "spaghetti basile",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 4,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vigtarin",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "healthy vigtarin meal",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "Sushi meal",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti bolonize",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "spaghetti white souce",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "Pizza margrita",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": "Pizza 4 chease",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chees burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Chease burger",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "spaghetti white souce",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "spaghetti basil",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "spaghetti meat",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 5,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vigtarin",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "Healthy vigtarin meal",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "Sushi meal",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti bolonize",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "spaghetti white souce",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "Pizza margrita",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": "Pizza 4 chease",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chees burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Chees burger",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "spaghetti basil",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "spaghetti meat",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "spaghetti meat",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 6,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vigtarin",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "Healthy vigtarin meal",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "Sushi meal",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti bolonize",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "spaghetti white souce",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "Pizza margrita",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": "Pizza 4 chease",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chees burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Chease burger",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "spaghetti basil",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "spaghetti meat",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "spaghetti meat",
+          "price": 22
+        }
+      ]
+    }
   ]
 }
