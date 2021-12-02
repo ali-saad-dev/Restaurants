@@ -28,7 +28,6 @@ export class Cart {
 
     removeItem(id: number) {
         let existingItem = this.existInCart(id);
-        console.log(existingItem)
         if (existingItem.length > 0) {
             const productIndex = this._products.findIndex((item) => item.id == id);
             const item = existingItem[0];
@@ -43,7 +42,6 @@ export class Cart {
     }
 
     clearCart() {
-        console.log("total()")
         this._products = [];
         this._totalPrice = 0;
     }

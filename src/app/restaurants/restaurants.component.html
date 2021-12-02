@@ -3,7 +3,7 @@
 	<label>Filter restuarant by type: </label>&nbsp;
 	<input type="text" [(ngModel)]="filteredstring" />
 	<section id="testimonial" class="testimonial-section img-bg pt-150 pb-40">
-		<div class="filterheart" (click)="toggleShowFavorits()" [ngClass]="{'activee':isFavorit}">
+		<div class="filterheart" (click)="toggleShowFavorits()" [ngClass]="{'active':filterfavorits}">
 			<i class="iconify" data-icon="bi:heart-fill"></i>
 		</div>
 		<div class="container">

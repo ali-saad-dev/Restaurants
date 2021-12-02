@@ -25,7 +25,6 @@ export class CartItemComponent implements OnInit {
   }
 
   editQty(item: MenuItem) {
-    console.log(this.data.quantity, this.qty);
     if (this.qty > this.data.quantity) {
       this.itemCart = this.cartService.addToCart(item);
     } else if (this.qty < this.data.quantity) {
