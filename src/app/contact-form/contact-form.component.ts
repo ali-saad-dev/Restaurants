@@ -1,9 +1,7 @@
 import { RestaurantModel } from './../classes/RestaurantModel';
-import { RestaurantDetailComponent } from './../restaurant-detail/restaurant-detail.component';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { CartService } from '../database/cart.service';
-import { Component, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core'
+import { Component, OnInit, ViewChild } from '@angular/core'
 import { MapInfoWindow, GoogleMap, MapMarker } from '@angular/google-maps'
 import { DatabaseService } from './../database/database.service';
 @Component({
@@ -32,7 +30,6 @@ export class ContactFormComponent implements OnInit {
   }
 
   markers = Array();
-
 
   constructor(
     private databaseService: DatabaseService,
@@ -76,26 +73,22 @@ export class ContactFormComponent implements OnInit {
     this.infoWindow.open(marker);
   }
 
-
-
-
-
-userForm = new FormGroup({
-  firstname: new FormControl('', Validators.required),
-  lastname: new FormControl('', Validators.required),
-  email: new FormControl('', Validators.required),
-  message: new FormControl('', Validators.required)
-});
+  userForm = new FormGroup({
+    firstname: new FormControl('', Validators.required),
+    lastname: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required)
+  });
 
   public isSuccess!: boolean;
 
-onSubmit() {
-  if (this.userForm.valid) {
-    this.isSuccess = true;
-    this.userForm.reset();
-    setTimeout(() => {
-      this.Router.navigate(['restaurants'])
-    }, 3000);
+  onSubmit() {
+    if (this.userForm.valid) {
+      this.isSuccess = true;
+      this.userForm.reset();
+      setTimeout(() => {
+        this.Router.navigate(['restaurants'])
+      }, 3000);
+    }
   }
-}
 }

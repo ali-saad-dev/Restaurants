@@ -38,7 +38,7 @@ export class RestaurantsComponent implements OnInit {
   }
 
   toggleFavorit(restaurant: RestaurantModel) {
-   this.isFavorit =  restaurant.isFavorite = !restaurant.isFavorite;
+    this.isFavorit = restaurant.isFavorite = !restaurant.isFavorite;
     console.log(restaurant.isFavorite)
   }
 

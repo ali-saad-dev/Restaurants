@@ -29,7 +29,7 @@ export class CartService {
     const foundItem = this.cart.items.filter(item => item.id == id);
     return foundItem.length > 0;
   }
-  
+
   private addCookieContent() {
     const jsonData = this.cookieService.get('cart');
     if (jsonData) {

@@ -3,7 +3,7 @@
 	<label>Filter restuarant by type: </label>&nbsp;
 	<input type="text" [(ngModel)]="filteredstring" />
 	<section id="testimonial" class="testimonial-section img-bg pt-150 pb-40">
-		<div class="filterheart" (click)="toggleShowFavorits()"[ngClass]="{'activee':isFavorit}">
+		<div class="filterheart" (click)="toggleShowFavorits()" [ngClass]="{'activee':isFavorit}">
 			<i class="iconify" data-icon="bi:heart-fill"></i>
 		</div>
 		<div class="container">
@@ -63,8 +63,7 @@
 							<a href="home" class="page-scroll">Home</a>
 						</li>
 						<li>
-							<a class="page-scroll" routerLinkActive="active"
-								routerLink="/restaurants">Restaurants</a>
+							<a class="page-scroll" routerLinkActive="active" routerLink="/restaurants">Restaurants</a>
 						</li>
 						<li>
 							<a routerLinkActive="active" routerLink="/contactform">Contact</a>
@@ -88,5 +87,4 @@
 			</div>
 		</div>
 	</div>
-</footer>	
-	
+</footer>

@@ -51,7 +51,7 @@ export class RestaurantDetailComponent implements OnInit {
     window.alert('Your product has been added to the cart!');
   }
 
-  getCartContent():void {
+  getCartContent(): void {
     const cartContent = this.cartService.getItems();
     cartContent.forEach(menuItem => {
       const menuIndex = this.getMenuIndex(menuItem.restaurantId, menuItem.id);
@@ -61,7 +61,7 @@ export class RestaurantDetailComponent implements OnInit {
     });
   }
 
-  getMenuIndex(restaurantId: number, menuId: number):number {
+  getMenuIndex(restaurantId: number, menuId: number): number {
     for (let i = 0; i < this.restaurantMenus.length; i++) {
       const menuItem = this.restaurantMenus[i];
       if (menuItem.restaurantId == restaurantId && menuItem.id == menuId) {
