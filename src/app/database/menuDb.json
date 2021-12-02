@@ -6,9 +6,9 @@
         {
           "id": 1,
           "categorie": "healthy",
-          "name": "Vigtarin",
+          "name": "vegetarian",
           "imagePath": "assets/menu-item-photos/1.jpg",
-          "description": "Healthy vigtarin",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
           "price": 10
         },
         {
@@ -16,7 +16,7 @@
           "categorie": "healthy",
           "name": "Sushi",
           "imagePath": "assets/menu-item-photos/17.jpg",
-          "description": "Sushi meal",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
           "price": 12
         },
         {
@@ -24,7 +24,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/3.jpg",
-          "description": "spaghetti bolonize",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
           "price": 7.5
         },
         {
@@ -32,7 +32,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/4.jpg",
-          "description": "spaghetti white",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
           "price": 14
         },
         {
@@ -40,7 +40,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/5.jpg",
-          "description": "Pizza margrita",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
           "price": 8
         },
         {
@@ -48,7 +48,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/6.jpg",
-          "description": "Pizza 4 chease",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
           "price": 5
         },
         {
@@ -56,7 +56,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/7.jpg",
-          "description": "Chease burger",
+          "description": " delicious burger that's packed with flavor and textures then this egg-topped burger",
           "price": 20
         },
         {
@@ -64,7 +64,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/8.jpg",
-          "description": "Chease burger",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
           "price": 13
         },
         {
@@ -72,7 +72,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/9.jpg",
-          "description": "spaghetti basile",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
           "price": 11
         },
         {
@@ -80,7 +80,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/10.jpg",
-          "description": "spaghetti meat",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
           "price": 12
         },
         {
@@ -88,7 +88,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/11.jpg",
-          "description": "spaghetti chease",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
           "price": 22
         }
       ]
@@ -99,9 +99,9 @@
         {
           "id": 1,
           "categorie": "healthy",
-          "name": "vigtarin",
+          "name": "vegetarian",
           "imagePath": "assets/menu-item-photos/1.jpg",
-          "description": "Healthy vigtarin meal",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
           "price": 10
         },
         {
@@ -109,7 +109,7 @@
           "categorie": "healthy",
           "name": "Sushi",
           "imagePath": "assets/menu-item-photos/17.jpg",
-          "description": "Sushi meal",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
           "price": 12
         },
         {
@@ -117,7 +117,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/3.jpg",
-          "description": "spaghetti bolonize",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
           "price": 7.5
         },
         {
@@ -125,7 +125,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/4.jpg",
-          "description": "spaghetti white souce",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
           "price": 14
         },
         {
@@ -133,7 +133,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/5.jpg",
-          "description": "Pizza margrita",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
           "price": 8
         },
         {
@@ -141,7 +141,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/6.jpg",
-          "description": "Pizza 4 chease",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
           "price": 5
         },
         {
@@ -149,7 +149,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/7.jpg",
-          "description": "Chees burger",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
           "price": 20
         },
         {
@@ -157,7 +157,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/8.jpg",
-          "description": "Chease burger",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
           "price": 13
         },
         {
@@ -165,7 +165,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/9.jpg",
-          "description": "spaghetti chease",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
           "price": 11
         },
         {
@@ -173,7 +173,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/10.jpg",
-          "description": "spaghetti meat",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
           "price": 12
         },
         {
@@ -181,7 +181,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/11.jpg",
-          "description": "spaghetti basil",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
           "price": 22
         }
       ]
@@ -192,9 +192,9 @@
         {
           "id": 1,
           "categorie": "healthy",
-          "name": "vigtarin",
+          "name": "vegetarian",
           "imagePath": "assets/menu-item-photos/1.jpg",
-          "description": "healthy vigtarin meal",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
           "price": 10
         },
         {
@@ -202,7 +202,7 @@
           "categorie": "healthy",
           "name": "Sushi",
           "imagePath": "assets/menu-item-photos/17.jpg",
-          "description": "Sushi meal",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
           "price": 12
         },
         {
@@ -210,7 +210,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/3.jpg",
-          "description": "spaghetti bolonize",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
           "price": 7.5
         },
         {
@@ -218,7 +218,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/4.jpg",
-          "description": "spaghetti white souce",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
           "price": 14
         },
         {
@@ -226,7 +226,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/5.jpg",
-          "description": "Pizza margrita",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
           "price": 8
         },
         {
@@ -234,7 +234,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/6.jpg",
-          "description": "Pizza 4 chease",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
           "price": 5
         },
         {
@@ -242,7 +242,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/7.jpg",
-          "description": "Chease burger",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
           "price": 20
         },
         {
@@ -250,7 +250,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/8.jpg",
-          "description": "Chease burger",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
           "price": 13
         },
         {
@@ -258,7 +258,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/9.jpg",
-          "description": "spaghetti chease",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
           "price": 11
         },
         {
@@ -266,7 +266,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/10.jpg",
-          "description": "spaghetti meat",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
           "price": 12
         },
         {
@@ -274,7 +274,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/11.jpg",
-          "description": "spaghetti basile",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
           "price": 22
         }
       ]
@@ -285,9 +285,9 @@
         {
           "id": 1,
           "categorie": "healthy",
-          "name": "vigtarin",
+          "name": "vegetarian",
           "imagePath": "assets/menu-item-photos/1.jpg",
-          "description": "healthy vigtarin meal",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
           "price": 10
         },
         {
@@ -295,7 +295,7 @@
           "categorie": "healthy",
           "name": "Sushi",
           "imagePath": "assets/menu-item-photos/17.jpg",
-          "description": "Sushi meal",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
           "price": 12
         },
         {
@@ -303,7 +303,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/3.jpg",
-          "description": "spaghetti bolonize",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
           "price": 7.5
         },
         {
@@ -311,7 +311,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/4.jpg",
-          "description": "spaghetti white souce",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
           "price": 14
         },
         {
@@ -319,7 +319,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/5.jpg",
-          "description": "Pizza margrita",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
           "price": 8
         },
         {
@@ -327,7 +327,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/6.jpg",
-          "description": "Pizza 4 chease",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
           "price": 5
         },
         {
@@ -335,7 +335,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/7.jpg",
-          "description": "Chees burger",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
           "price": 20
         },
         {
@@ -343,7 +343,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/8.jpg",
-          "description": "Chease burger",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
           "price": 13
         },
         {
@@ -351,7 +351,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/9.jpg",
-          "description": "spaghetti white souce",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
           "price": 11
         },
         {
@@ -359,7 +359,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/10.jpg",
-          "description": "spaghetti basil",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
           "price": 12
         },
         {
@@ -367,7 +367,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/11.jpg",
-          "description": "spaghetti meat",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
           "price": 22
         }
       ]
@@ -378,9 +378,9 @@
         {
           "id": 1,
           "categorie": "healthy",
-          "name": "vigtarin",
+          "name": "vegetarian",
           "imagePath": "assets/menu-item-photos/1.jpg",
-          "description": "Healthy vigtarin meal",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
           "price": 10
         },
         {
@@ -388,7 +388,7 @@
           "categorie": "healthy",
           "name": "Sushi",
           "imagePath": "assets/menu-item-photos/17.jpg",
-          "description": "Sushi meal",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
           "price": 12
         },
         {
@@ -396,7 +396,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/3.jpg",
-          "description": "spaghetti bolonize",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
           "price": 7.5
         },
         {
@@ -404,7 +404,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/4.jpg",
-          "description": "spaghetti white souce",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
           "price": 14
         },
         {
@@ -412,7 +412,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/5.jpg",
-          "description": "Pizza margrita",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
           "price": 8
         },
         {
@@ -420,7 +420,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/6.jpg",
-          "description": "Pizza 4 chease",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
           "price": 5
         },
         {
@@ -428,7 +428,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/7.jpg",
-          "description": "Chees burger",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
           "price": 20
         },
         {
@@ -436,7 +436,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/8.jpg",
-          "description": "Chees burger",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
           "price": 13
         },
         {
@@ -444,7 +444,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/9.jpg",
-          "description": "spaghetti basil",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
           "price": 11
         },
         {
@@ -452,7 +452,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/10.jpg",
-          "description": "spaghetti meat",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
           "price": 12
         },
         {
@@ -460,7 +460,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/11.jpg",
-          "description": "spaghetti meat",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
           "price": 22
         }
       ]
@@ -471,9 +471,9 @@
         {
           "id": 1,
           "categorie": "healthy",
-          "name": "vigtarin",
+          "name": "vegetarian",
           "imagePath": "assets/menu-item-photos/1.jpg",
-          "description": "Healthy vigtarin meal",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
           "price": 10
         },
         {
@@ -481,7 +481,7 @@
           "categorie": "healthy",
           "name": "Sushi",
           "imagePath": "assets/menu-item-photos/17.jpg",
-          "description": "Sushi meal",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
           "price": 12
         },
         {
@@ -489,7 +489,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/3.jpg",
-          "description": "spaghetti bolonize",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
           "price": 7.5
         },
         {
@@ -497,7 +497,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/4.jpg",
-          "description": "spaghetti white souce",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
           "price": 14
         },
         {
@@ -505,7 +505,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/5.jpg",
-          "description": "Pizza margrita",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
           "price": 8
         },
         {
@@ -513,7 +513,7 @@
           "categorie": "fastfood",
           "name": "Pizza",
           "imagePath": "assets/menu-item-photos/6.jpg",
-          "description": "Pizza 4 chease",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
           "price": 5
         },
         {
@@ -521,7 +521,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/7.jpg",
-          "description": "Chees burger",
+          "description": "Chease burger",
           "price": 20
         },
         {
@@ -529,7 +529,7 @@
           "categorie": "fastfood",
           "name": "Burger",
           "imagePath": "assets/menu-item-photos/8.jpg",
-          "description": "Chease burger",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
           "price": 13
         },
         {
@@ -537,7 +537,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/9.jpg",
-          "description": "spaghetti basil",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
           "price": 11
         },
         {
@@ -545,7 +545,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/10.jpg",
-          "description": "spaghetti meat",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
           "price": 12
         },
         {
@@ -553,7 +553,7 @@
           "categorie": "dinner",
           "name": "spaghetti",
           "imagePath": "assets/menu-item-photos/11.jpg",
-          "description": "spaghetti meat",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
           "price": 22
         }
       ]

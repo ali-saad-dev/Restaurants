@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="about-img wow fadeInUp" data-wow-delay=".5s">
-          <img src="{{restaurantData.photo}}" />
+          <img [src]="restaurantData.photo"/>
         </div>
       </div>
       <div class="col-lg-6">
@@ -11,10 +11,11 @@
           <div class="section-title">
             <span class="wow fadeInUp" data-wow-delay=".2s">Welcome to our Resturant</span>
             <h1 class="wow fadeInUp" data-wow-delay=".4s">{{restaurantData.name}}</h1>
-            <p class="wow fadeInUp" data-wow-delay=".6s">The approach to the menu was easy. We had no interest in trying to reinvent food.
-               We went with choices that were popular catering requests — basic,
-                down-home style — just from a wide range of regions.
-                 We are known for our generous portions</p>
+            <p class="wow fadeInUp" data-wow-delay=".6s">The approach to the menu was easy. We had no interest in trying
+              to reinvent food.
+              We went with choices that were popular catering requests — basic,
+              down-home style — just from a wide range of regions.
+              We are known for our generous portions</p>
           </div>
           <div class="rating-meta d-flex align-items-center wow fadeInUp" data-wow-delay=".65s">
             <h5>Rating 4.8</h5>
@@ -58,29 +59,29 @@
       </option>
       <option *ngFor="let categorie of categoridata" value="{{categorie}}">{{categorie}}</option>
     </select>
-    <!-- <label>Filter Menu by categorie: </label>&nbsp;-->
     <input hidden type="text" [(ngModel)]="filtermenu" />
     <div class="row">
-      <div class="col-md-3 item"  *ngFor="let menu of menuData.menus| menufilter: filtermenu:'categorie'">
-          <div class="card">
-              <div class="image-container">
-                  <img src="{{menu.imagePath}}" class="img-fluid rounded thumbnail-image">
-              </div>
-              <div class="product-detail-container p-2">
-                  <div class="extra_wrapper">
-                    <div class="title col3">
-                      <h5>{{ menu.name }}</h5>
-                    </div>
-                    {{ menu.description }}
-                    <p class="col1">
-                      <span></span>{{ menu.price | currency : "€"}}
-                      <button id="add"  (click)="addToCart(menu)" class="btn btn-primary">Add to cart</button>
-                    </p>
-                    <br>
-                  </div>
-              </div>
+      <div class="col-md-3 item" *ngFor="let menu of restaurantMenus| menufilter: filtermenu:'categorie'">
+        <div class="card">
+          <div class="image-container">
+            <img src="{{menu.imagePath}}" class="img-fluid rounded thumbnail-image">
           </div>
+          <div class="product-detail-container p-2">
+            <div class="extra_wrapper">
+              <div class="title col3">
+                <h5>{{ menu.name }}</h5>
+              </div>
+              {{ menu.description }}
+              <p class="col1"><br />
+                <span>{{ menu.price | currency : "€"}}</span>
+                <button id="add" (click)="addToCart(menu)" class="btn btn-primary">Add to cart</button><span *ngIf="menu.quantity != 0">{{menu.quantity}}</span>
+                <span *ngIf="menu.quantity > 0" class="iconify" data-icon="bi:cart-plus-fill" style="color: #3167eb;"></span>
+              </p>
+              <br>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
+    </div>
   </div>
 </section>

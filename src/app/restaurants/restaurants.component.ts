@@ -10,6 +10,8 @@ import { DatabaseService } from '../database/database.service';
 
 export class RestaurantsComponent implements OnInit {
 
+  public isFavorit!: boolean;
+
   private _categoryFilter: string = '';
   get categoryFilter(): string {
     return this._categoryFilter;
@@ -36,14 +38,10 @@ export class RestaurantsComponent implements OnInit {
   }
 
   toggleFavorit(restaurant: RestaurantModel) {
-    restaurant.isFavorite = !restaurant.isFavorite;
+   this.isFavorit =  restaurant.isFavorite = !restaurant.isFavorite;
     console.log(restaurant.isFavorite)
   }
 
-  Arabic() {
-    this.categoryFilter = "Arabic";
-    this.categoryFilter = this.filteredstring;
-  }
   toggleShowFavorits() {
     this.filterfavorits = !this.filterfavorits;
     if (this.filterfavorits) {

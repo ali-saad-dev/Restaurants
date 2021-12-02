@@ -64,6 +64,5 @@ export class CartService {
     const result: CartTotal = { totalPrice: this.cart.totalPrice, cartContent: this.cart.items };
     this.changeCartEvent.next(result);
     this.cookieService.set('cart', JSON.stringify(this.cart._products));
-    console.log(result);
   }
 }

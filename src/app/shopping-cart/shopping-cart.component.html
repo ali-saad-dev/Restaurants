@@ -11,9 +11,9 @@
           <br>
           <div class="container">
             <div class="row">
-              <th class="col-3" style="margin-left: 60px;">Product</th>
-              <th class="col-3" style="margin-left: 133px;">Quantity</th>
-              <th class="col-3" style="margin-left: -35px;">Price</th>
+              <th class="col" style="margin-left: 60px;">Product</th>
+              <th class="col" style="margin-left: 438px;">Quantity</th>
+              <th class="col" style="margin-left: -45px;">Price</th>
             </div>
           </div>
 
@@ -21,7 +21,7 @@
             <tbody>
               <tr *ngFor="let item of cartTotal.cartContent" style="border-bottom: 1px solid #e4e4e4;">
                 <td colspan="4">
-                <app-cart-item [data]="item"></app-cart-item>
+                <app-cart-item  [data]="item" ></app-cart-item>
               </td>
               </tr>
             </tbody>
@@ -39,8 +39,15 @@
           <p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 hours</p>
         </div>
       </main>
+      <div class="col-lg-5" *ngIf="cartTotal.cartContent.length == 0">
+        <div class="delivery-content">
+        
+            <img src="assets/foodapplanding/img/delivery/1.png" class="rounded">
+     
+        </div>
+      </div>
       <aside class="col-md-3">
-        <div class="card">
+        <div class="card" *ngIf="cartTotal.cartContent.length > 0">
           <div class="card-body">
             <dl class="dlist-align">
               <dt>Total price:</dt>

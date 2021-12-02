@@ -1,5 +1,4 @@
 export class MenuItem {
-
   id: number;
   imagePath: string;
   name: string;
@@ -22,13 +21,11 @@ export class MenuItem {
 
   increaseQtd() {
     this._quantity++;
-    console.log(this._quantity);
   }
   
   decreaseQtd() {
     if (this._quantity > 0) {
       this._quantity--;
-      console.log(this._quantity);
     }
   }
 
