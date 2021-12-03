@@ -38,7 +38,7 @@ export class CheckoutFormComponent implements OnDestroy {
   checkoutform = new FormGroup({
     firstname: new FormControl('', Validators.required),
     lastname: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.required),
+    email: new FormControl('',  Validators.email),
     address: new FormControl('', Validators.required),
     postcode: new FormControl('', Validators.required),
     paymentType: new FormControl('', Validators.required),
