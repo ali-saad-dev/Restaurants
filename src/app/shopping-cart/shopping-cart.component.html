@@ -1,0 +1,115 @@
+<section id="services" class="service-section pt-150">
+  <div class="container">
+    <h2 class="title-page">Shopping cart</h2>
+  </div>
+</section>
+<section class="section-content padding-y">
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9" *ngIf="cartTotal.cartContent.length">
+        <div class="card">
+          <br>
+          <div class="container">
+            <div class="row">
+              <th class="col" style="margin-left: 60px;">Product</th>
+              <th class="col" style="margin-left: 438px;">Quantity</th>
+              <th class="col" style="margin-left: -45px;">Price</th>
+            </div>
+          </div>
+
+          <table class="table table-borderless">
+            <tbody>
+              <tr *ngFor="let item of cartTotal.cartContent" style="border-bottom: 1px solid #e4e4e4;">
+                <td colspan="4">
+                  <app-cart-item [data]="item"></app-cart-item>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="card-body border-top">
+            <a routerLinkActive="active" routerLink="/checkoutform" class="btn btn-primary float-md-right"> Make
+              Purchase <i class="fa fa-chevron-right"></i> </a>
+            <button id="delete" (click)="clear()" class="btn btn-danger float-md-right"> <i class="fa fa-trash"></i>
+              Remove all items </button>
+            <a routerLinkActive="active" routerLink="/restaurants" class="btn btn-primary"> <i
+                class="fa fa-chevron-left"></i> Continue shopping </a>
+          </div>
+        </div>
+        <div class="alert alert-success mt-3">
+          <p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 hours</p>
+        </div>
+      </main>
+      <div class="col-lg-5" *ngIf="cartTotal.cartContent.length == 0">
+        <div class="delivery-content">
+
+          <img src="assets/foodapplanding/img/delivery/1.png" class="rounded">
+
+        </div>
+      </div>
+      <aside class="col-md-3">
+        <div class="card" *ngIf="cartTotal.cartContent.length > 0">
+          <div class="card-body">
+            <dl class="dlist-align">
+              <dt>Total price:</dt>
+              <dd class="text-right">{{ cartTotal.totalPrice | currency: "€" }}</dd>
+            </dl>
+            <dl class="dlist-align">
+              <dt>Discount:</dt>
+              <dd class="text-right">€ 0</dd>
+            </dl>
+            <dl class="dlist-align">
+              <dt>Total:</dt>
+              <dd class="text-right text-success  h5"><strong>{{ cartTotal.totalPrice | currency: "€"}}</strong></dd>
+            </dl>
+            <hr />
+            <p class="text-center mb-3">
+              <img src="assets/e-shop/images/misc/payments.png" height="26">
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="footer pt-100 pb-70">
+  <div class="footer-shape">
+    <img src="assets/foodapplanding/img/footer/footer-left.svg" alt="" class="shape shape-1" />
+    <img src="assets/foodapplanding/img/footer/footer-right.svg" alt="" class="shape shape-2" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+          <div class="logo">
+            <a href="#"><img src="assets/foodapplanding/img/logo/logo-2.svg" alt="logo" /></a>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="home" class="page-scroll">Home</a>
+            </li>
+            <li>
+              <a class="page-scroll" routerLinkActive="active" routerLink="/restaurants">Restaurants</a>
+            </li>
+            <li>
+              <a routerLinkActive="active" routerLink="/contactform">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+          <div class="download-btns">
+            <a href="javascript:void(0)">
+              <span class="icon"><i class="lni lni-apple"></i></span>
+              <span class="text">Download on the <b>App Store</b> </span>
+            </a>
+            <a href="javascript:void(0)">
+              <span class="icon"><i class="lni lni-play-store"></i></span>
+              <span class="text">GET IT ON <b>Play Store</b> </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,562 @@
+{
+  "restaurants": [
+    {
+      "restaurantId": 1,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vegetarian",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": " delicious burger that's packed with flavor and textures then this egg-topped burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 2,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vegetarian",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 3,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vegetarian",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 4,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vegetarian",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 5,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vegetarian",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "delicious burger that's packed with flavor and textures then this egg-topped burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "restaurantId": 6,
+      "menus": [
+        {
+          "id": 1,
+          "categorie": "healthy",
+          "name": "vegetarian",
+          "imagePath": "assets/menu-item-photos/1.jpg",
+          "description": "This is an amazing and unusual salad that is fun for kids to help make.",
+          "price": 10
+        },
+        {
+          "id": 2,
+          "categorie": "healthy",
+          "name": "Sushi",
+          "imagePath": "assets/menu-item-photos/17.jpg",
+          "description": "A topping, usually fish, served on top of sushi rice,Rice and filling wrapped in",
+          "price": 12
+        },
+        {
+          "id": 3,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/3.jpg",
+          "description": "spaghetti using canned corned beef and bottled spaghetti sauce.Delicious!",
+          "price": 7.5
+        },
+        {
+          "id": 4,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/4.jpg",
+          "description": "A comforting baked spaghetti casserole with plenty of melted cheese.",
+          "price": 14
+        },
+        {
+          "id": 5,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/5.jpg",
+          "description": "A light and flavorful pizza featuring feta, tomatoes.",
+          "price": 8
+        },
+        {
+          "id": 6,
+          "categorie": "fastfood",
+          "name": "Pizza",
+          "imagePath": "assets/menu-item-photos/6.jpg",
+          "description": " pizza sauce, and a handy blend of prepared green peppers, mushrooms.",
+          "price": 5
+        },
+        {
+          "id": 7,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/7.jpg",
+          "description": "Chease burger",
+          "price": 20
+        },
+        {
+          "id": 8,
+          "categorie": "fastfood",
+          "name": "Burger",
+          "imagePath": "assets/menu-item-photos/8.jpg",
+          "description": "Big juicy burgers filled with chilies, cheese and mushrooms.",
+          "price": 13
+        },
+        {
+          "id": 9,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/9.jpg",
+          "description": "A delicious and quick pasta dish. Serve with a green salad and garlic bread.",
+          "price": 11
+        },
+        {
+          "id": 10,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/10.jpg",
+          "description": "Fresh tomatoes can be put in the place of the puree but not recommended.",
+          "price": 12
+        },
+        {
+          "id": 11,
+          "categorie": "dinner",
+          "name": "spaghetti",
+          "imagePath": "assets/menu-item-photos/11.jpg",
+          "description": "Spaghettini with garlic and chease. Perfect for most Italian dishes!",
+          "price": 22
+        }
+      ]
+    }
+  ]
+}

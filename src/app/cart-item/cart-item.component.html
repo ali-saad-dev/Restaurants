@@ -1,0 +1,29 @@
+<table width="100%">
+    <tr>
+        <td class="clearfix">
+            <div>
+                <img src="{{ data.imagePath }}" class="img-md float-left mr-4">
+
+                <div class="description">
+                    <h5 class="card-title text-dark">{{ data.name }}</h5>
+                    <p class="card-text">{{ data.description }}</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="qty">
+                <input type="number" (change)="editQty(data)" [(ngModel)]="qty">
+            </div>
+        </td>
+        <td>
+            <div class="price-wrap">
+                <span class="price">{{ data.price | currency: "€"}}</span>
+            </div>
+        </td>
+        <td>
+            <div (click)="removeItem(data)">
+                <span class="iconify" data-icon="bi:x" style="color: red;" data-width="40" data-height="40"></span>
+            </div>
+        </td>
+    </tr>
+</table>
